@@ -1,0 +1,694 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    height: 100%;
+}
+
+/*------css reset---------*/
+.wrap{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/*-----輪播幻燈片的樣式-----*/
+.slideshow img{
+    width: 100%;
+}
+
+
+
+/*----標題1的樣式----*/
+.title-1{
+    background: url(../images/item01-BG2.jpg) no-repeat right top #cce7e9;
+    height: 105px;
+}
+
+.name-1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #53888b;
+    padding-top: 60px;
+    padding-left: 200px;
+    padding-bottom: 15px;
+    background: url(../images/item01-BG1.png) no-repeat left bottom;
+}
+
+/*標題1的媒體查詢*/
+@media (min-width: 992px) and (max-width: 1199px)  {
+	
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+
+    
+   
+}
+
+@media (max-width: 767px) {
+    .left-logo img{
+        width: 55%;
+    }
+    .carousel-control-prev-icon , .carousel-control-next-icon{
+        visibility:hidden;
+        }
+
+    .title-1{
+            background-image:none;
+    }
+    .name-1{
+        font-size: 30px;
+        font-weight: bold;
+        color: #53888b;
+        padding-top: 60px;
+        padding-left: 150px;
+        background: url(../images/item01-BG1.png) no-repeat left bottom;
+    }    
+}
+
+
+/*----內容1的樣式----*/
+
+.issue-1-word , .issue-2-word , .issue-3-word , .issue-4-word{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 30px 30px 55px;
+}
+
+.issue-1-word{
+    background: #ebf5f5;
+}
+
+.issue-1-word li, .issue-2-word li, .issue-3-word li, .issue-4-word li{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-1{
+    margin-bottom: 20px;
+}
+
+.issue-1-title{
+    color: #53888b;
+}
+
+h2{
+    font-size: 22px;
+    line-height: 26px;
+    text-align: justify;
+    margin-bottom: 18px;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.word-1 p{
+    display: block;
+    text-align: justify;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4f4f4f;
+    margin-bottom: 40px;
+}
+
+.more-1{
+    display: block;
+    width: 80px;
+    font-size: 13px;
+    color: #666;
+    background: url(../images/icon_more-1.png) no-repeat right center;
+    height: 18px;
+}
+
+.word-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.filter-1:hover{
+    filter:saturate(200%);
+}
+
+
+/*內容1的媒體查詢*/
+@media (min-width: 992px) and (max-width: 1199px)  {
+	
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .issue-1-word , .issue-2-word , .issue-3-word , .issue-4-word{
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+    
+    .photo-1 img{
+        width: 100%;
+        max-width: 228px;
+    }
+
+    .photo-1{
+        width: 48%;
+        margin-right: 1.5rem;
+    }
+
+    .link-1{
+        width: 48%;
+    }
+
+    .issue-1-word li, .issue-2-word li, .issue-3-word li, .issue-4-word li{
+        display: flex;
+        width: 48%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    h2{
+        font-size: 20px;
+        line-height: 24px;
+        text-align: justify;
+        margin-bottom: 16px;
+        padding-right: 20px;
+        font-weight: bold;
+    }
+
+    .word-1 p{
+        display: block;
+        text-align: justify;
+        padding-right: 20px;
+        font-size: 16px;
+        line-height: 20px;
+        color: #4f4f4f;
+        margin-bottom: 30px;
+    }
+
+    .word-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 85%;
+    }
+    
+
+}
+
+@media (max-width: 767px) {
+    .issue-1-word , .issue-2-word , .issue-3-word , .issue-4-word{
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+
+    
+    .issue-1-word li, .issue-2-word li, .issue-3-word li, .issue-4-word li{
+        display: flex;
+        width: 97%;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+    }
+
+    .photo-1 img{
+        width: 100%;
+        max-width: 228px;
+    }
+
+    .photo-1{
+        width: 40%;
+        margin-right: 1.5rem;
+    }
+
+    .link-1{
+        width: 55%;
+    }
+
+    h2{
+        font-size: 20px;
+        line-height: 22px;
+        text-align: justify;
+        margin-bottom: 14px;
+        padding-right: 20px;
+        font-weight: bold;
+    }
+
+    .word-1 p{
+        display: block;
+        text-align: justify;
+        padding-right: 20px;
+        font-size: 15px;
+        line-height: 20px;
+        color: #4f4f4f;
+    }
+
+    .word-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 70%;
+    }
+}
+
+
+/*----標題2的樣式----*/
+.title-2{
+    background: url(../images/item04-BG2.jpg) no-repeat right top #d3e2c7;
+    height: 105px;
+}
+
+.name-2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #527b3d;
+    padding-top: 60px;
+    padding-left: 200px;
+    padding-bottom: 15px;
+    background: url(../images/item04-BG1.png) no-repeat left bottom;
+}
+
+/*標題2的媒體查詢*/
+@media (min-width: 992px) and (max-width: 1199px)  {
+	
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+
+    
+   
+}
+
+@media (max-width: 767px) {
+    .title-2{
+            background-image:none;
+    }
+    .name-2{
+        font-size: 30px;
+        font-weight: bold;
+        color: #527b3d;
+        padding-top: 60px;
+        padding-left: 150px;
+        padding-bottom: 15px;
+        background: url(../images/item04-BG1.png) no-repeat left bottom;
+    }    
+}
+
+/*----內容2的樣式----*/
+.issue-2-title{
+    color: #7ca964;
+}
+
+.more-2{
+    display: block;
+    width: 80px;
+    font-size: 13px;
+    color: #666;
+    background: url(../images/icon_more-4.png) no-repeat right center;
+    height: 18px;
+}
+
+.issue-2-word{
+    background-color: #eff6ea;
+}
+
+/*----標題3的樣式----*/
+.title-3{
+    background: url(../images/item03-BG2.jpg) no-repeat right top #e0d9c6;
+    height: 105px;
+}
+
+.name-3{
+    font-size: 30px;
+    font-weight: bold;
+    color: #715d2a;
+    padding-top: 60px;
+    padding-left: 200px;
+    padding-bottom: 15px;
+    background: url(../images/item03-BG1.png) no-repeat left bottom;
+}
+
+/*標題3的媒體查詢*/
+@media (min-width: 992px) and (max-width: 1199px)  {
+	
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+
+    
+   
+}
+
+@media (max-width: 767px) {
+    .title-3{
+            background-image:none;
+    }
+    .name-3{
+        font-size: 30px;
+        font-weight: bold;
+        color: #715d2a;
+        padding-top: 60px;
+        padding-left: 150px;
+        padding-bottom: 15px;
+        background: url(../images/item04-BG1.png) no-repeat left bottom;
+    }    
+}
+
+/*----內容3的樣式----*/
+.issue-3-title{
+    color: #776435;
+}
+
+.more-3{
+    display: block;
+    width: 80px;
+    font-size: 13px;
+    color: #666;
+    background: url(../images/icon_more-3.png) no-repeat right center;
+    height: 18px;
+}
+
+.issue-3-word{
+    background-color: #f6f2e9;
+}
+
+/*----標題4的樣式----*/
+.title-4{
+    background: url(../images/item02-BG2.jpg) no-repeat right top #e5cad6;
+    height: 105px;
+}
+
+.name-4{
+    font-size: 30px;
+    font-weight: bold;
+    color: #875164;
+    padding-top: 60px;
+    padding-left: 200px;
+    padding-bottom: 15px;
+    background: url(../images/item02-BG1.png) no-repeat left bottom;
+}
+
+/*標題3的媒體查詢*/
+@media (min-width: 992px) and (max-width: 1199px)  {
+	
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+
+    
+   
+}
+
+@media (max-width: 767px) {
+    .title-4{
+            background-image:none;
+    }
+    .name-4{
+        font-size: 30px;
+        font-weight: bold;
+        color: #875164;
+        padding-top: 60px;
+        padding-left: 150px;
+        padding-bottom: 15px;
+        background: url(../images/item04-BG1.png) no-repeat left bottom;
+    }    
+}
+
+/*----內容4的樣式----*/
+.issue-4-title{
+    color: #af6668;
+}
+
+.more-4{
+    display: block;
+    width: 80px;
+    font-size: 13px;
+    color: #666;
+    background: url(../images/icon_more-2.png) no-repeat right center;
+    height: 18px;
+}
+
+.issue-4-word{
+    background-color: #f8ebec;
+}
+
+/*----影片的樣式----*/
+
+.vidio{
+    background: #c1b6af;
+    padding: 40px 40px 50px;
+}
+
+h3{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.vidio-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+
+
+.vidio-list-1 , .vidio-list-2{
+    width: 48%; 
+}
+
+.vidio-1, .vidio-2{
+    width: 100%;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+    border: #fff 1px solid;
+}
+
+
+
+.vidio-txt{
+    font-size: 18px;
+    color:#fff;
+    font-weight: bold;
+    background-color: rgba(45, 45, 45, .52);
+    padding: 25px 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: #fff 1px solid;
+    border-top: none ;
+}
+
+.vidio-link-a , .vidio-link-b{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.vidio-1:hover , .vidio-2:hover{
+    filter:saturate(200%);
+}
+
+/*影片的媒體查詢*/
+@media (min-width: 992px) and (max-width: 1199px)  {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+    .vidio-list-1 , .vidio-list-2{
+        width: 90%; 
+        margin-bottom: 35px;
+    }
+
+    .vidio-box{
+        justify-content: center;
+    }
+}
+
+/*----右側固定選單的樣式----*/
+.fix-menu{
+    width: 86px;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 60px;
+    position: fixed;
+    right: 10px;
+    top: 8%;
+    z-index: 88888;
+}
+
+.fix-menu-link p{
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.fix-menu-link:hover{
+    filter:saturate(200%);
+}
+
+
+/*右側固定選單的媒體查詢*/
+@media (min-width: 992px) and (max-width: 1199px)  {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .fix-menu-link p{
+        font-size: 10px;
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 13px;
+        color: #666;
+    }
+}
+
+@media (max-width: 767px) {
+    .fix-menu-link p{
+        font-size: 10px;
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 13px;
+        color: #666;
+    }
+}
+
+/*------蓋版影片的樣式------*/
+.full-screen-a , .full-screen-b{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    z-index: 99999;
+}
+
+.video-a , .video-b{
+    position: relative;
+    width: 65%;
+    height: 0;
+    padding-bottom: 36.56%; /* 16:9 的宽高比 */
+}
+
+.video-a iframe, .video-b iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-close , .btn-close-b{
+    position: absolute;
+    z-index: 9999;
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    font-family: Arial,sans-serif;
+    background: #ffc600;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+/*影片的媒體查詢*/
+@media (min-width: 992px) and (max-width: 1199px)  {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .video-a , .video-b{
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%; /* 16:9 的宽高比 */
+    }
+}
+
+@media (max-width: 767px) {
+    .video-a , .video-b{
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 75%; /* 4:3 的宽高比 */
+    }
+}
